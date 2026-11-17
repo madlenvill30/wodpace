@@ -1,0 +1,152 @@
+/* WODPACE: Support, Datenschutz, Impressum. Look wie die App (Schwarz, Volt, Bebas Neue).
+   Schrift liegt hier, nichts wird von Google oder anderen Servern geladen. */
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("BebasNeue-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --bg: #050507;
+  --card: #121214;
+  --edge: #2a2a2e;
+  --text: #f4f5f7;
+  --muted: #a3a3a3;
+  --volt: #d4ff3a;
+  --todo: #ffb347;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+
+header.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+header.brand img {
+  width: 56px;
+  height: 56px;
+  border-radius: 13px;
+}
+
+header.brand a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-family: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  font-size: 34px;
+  margin: 40px 0 8px;
+  color: var(--volt);
+}
+
+h3 {
+  font-size: 17px;
+  margin: 24px 0 4px;
+}
+
+p,
+ul {
+  margin: 0 0 12px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a {
+  color: var(--volt);
+}
+
+.lead {
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+nav.lang,
+nav.pages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 8px;
+}
+
+nav a {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid var(--edge);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+nav a[aria-current="page"] {
+  border-color: var(--volt);
+}
+
+section {
+  border-top: 1px solid var(--edge);
+  margin-top: 40px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--edge);
+  border-radius: 20px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+
+.updated {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.todo {
+  color: var(--todo);
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 56px;
+  color: var(--muted);
+  font-size: 14px;
+}
